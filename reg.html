@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="headerWrapper">
+		<div class="header">
+			<div class="englang">
+				<a href="#"> ინგლ.ვერსია</a>
+				<a href="#">ქარ.ვერსია</a>
+			</div>
+			<div class="img">
+			</div>
+			<div class="title">
+				<h2> ელექტრონული ბიბლიოთეკა </h2>
+			</div>
+		</div>
+		<div class="menuWrapper">
+			<div class="menu">
+				<ul>
+					<li> <a href="index.html"> მთავარი </a> </li>
+					<li> <a href="about.html"> ჩვენ </a> </li>
+					<li> <a href="rus.html"> რუსულენოვანი წიგნები </a> </li>
+					<li> <a href="ing.html"> ინგლისურენოვანი წიგნები </a> </li>
+					<li> <a href="qart.html"> ქართულენოვანი წიგნები </a> </li>
+				</ul>
+
+				<div id="user-info">
+					<button class="btn sign-in-btn" id="headerSignInBtn">შესვლა</button>
+					<button class="btn register-btn" id="headerRegisterBtn">რეგისტრაცია</button>
+				</div>
+				<!-- <div id="userButtons" class="hidden">
+					<span id="userName"></span>
+					<button class="btn sign-in-btn" id='logout'>გასვლა</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="index">
+		<div class="reg-input">
+			<div class="main_reg"> რეგისტრაცია </div><br>
+			<div class="line_reg" id='warning'> რეგისტრაციისთვის შეავსეთ ყველა ველი:</div>
+			<form id="form--reg">
+				<input id="fname" type="text" name="firstname" placeholder="სახელი" required><br>
+				<input id= "lname" type="text" name="lastname" placeholder="გვარი" required><br>
+				<input id="number" type="number" name="personalNumber" placeholder="პირადი ნომერი" required><br>
+				<input id="password" type="text" name="psw" placeholder="პაროლი" required><br>
+				<input id="tpassword" type="text" name="rapleypassword" placeholder="გაიმეორეთ პაროლი" required>
+				<input id="email" type="text" name="email" placeholder="ელ.ფოსტა"><br>
+				<input type="submit" value="რეგისტრაცია">
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="developer">
+			<span><strong> Developed by Duda </strong></span>
+			<span><b> 2019 </b></span>
+		</div>
+	</div>
+	<script src='index.js'></script>
+</body>
+
+</html>

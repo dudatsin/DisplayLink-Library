@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="adminPage.html">პროდუქცია</a></li>
+                <li> <a href="#">დამატება</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class='edit' style='display:flex;flex-direction: column;width:60%;margin:auto;display:none;'>
+        <input type="text" placeholder="სახელი" id='name'>
+        <input type="text" placeholder="აღწერა" id='description'>
+        <input type="text" placeholder="ფასი" id='price'>
+        <input type="text" placeholder="ფასდაკლება" id='sale'>
+        <input type="text" placeholder="ავტორი" id='author'>
+        <input type="text" placeholder="სურათი" id='picture'>
+        <input type="text" value="" id='productidd' disabled>
+        <input type="button" onclick='editItem()' value='Edit item' >
+    </section>
+   <section class='products'>
+    
+   </section>
+    <script src='adminProducts.js'></script>
+</body>
+</html>
